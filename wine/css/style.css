@@ -15,7 +15,7 @@ a{
 }
 
 /*STYLES LOGIN*/
-body{
+body.login{
 	text-align: center;
 	background-image: url(../img/fondo.jpg);
 	background-position: center;
