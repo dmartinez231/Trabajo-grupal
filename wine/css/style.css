@@ -1,0 +1,277 @@
+/*reseteos generales*/
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+ul, ol{
+	padding:0px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*STYLES LOGIN*/
+body{
+	text-align: center;
+	background-image: url(../img/fondo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.cuadrado{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	margin: auto;
+	width:50%;
+  height:50vh;
+	background-color:black;
+	opacity: 0.6;
+}
+.text{
+	color: #ffffff;
+}
+a, h2, span{
+	color: #ffffff;
+}
+a, span{
+	 text-decoration: underline;
+}
+/*END STYLES LOGIN*/
+/* Start style home*/
+#body-home{
+	background-color: #572364;
+	padding: 20px;	
+}
+#body-home a{
+	text-decoration: none;
+}
+h1,h2{
+	font-family: 'Bad Script', cursive;
+}
+video{
+	display: none;
+}
+.box-white{
+	display: none;
+}
+/* fin reseteos generales*/
+/*navegador*/
+#logo img{
+	height: 40px;
+}
+#logo{
+	float: right;
+}
+.container-navegador{
+	overflow: hidden;
+}
+.control-menu {
+    border: 1px solid #fff;
+    display: block;
+    float: left;
+}
+.control-menu a span {
+    display: inline-block;
+    text-indent: -9999px;
+    height: 40px;
+    width: 40px;
+}
+.control-menu .close {
+    background-image: url("../img/close-menu.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: none;
+}
+.control-menu .open {
+    background-image: url("../img/open-menu.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+
+}
+.list-menu {
+	clear: both;
+    height: 0;
+    overflow: hidden;
+}
+#menu:target .list-menu {
+    height: auto;
+    background-color: transparent;
+}
+.close{
+	display: none;
+}
+#menu:target .open{
+	display: none;
+}
+#menu:target .close{
+	display: block;
+}
+.list-menu li {
+    display: block;
+    background-color: #9A2222;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid white;
+    margin-top: 3px;
+}
+.list-menu a {
+	text-transform: uppercase;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+/*fin navegador*/
+/* Header*/	
+
+.container-header{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+.container-logo{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 30% 50% 30% 50%;
+	border:1px solid black;
+	margin: auto;
+}
+.container-logo img{
+	width: 100%;
+	height: 100%;
+}
+.container-header h1{
+	color: black;
+	margin-top: 30px;
+	font-family: 'Bad Script', cursive;
+}
+.container-header p{
+	color: black;
+	margin-top: 20px;
+	letter-spacing: 3px;
+}
+/* fin Header*/
+/*Contenido section*/
+
+.option{
+	text-align: center;
+	margin-top: 30px;
+	background-color: #D2C8C8;
+	border-radius: 50px;
+	padding: 20px;
+}
+.container-img{
+	border-radius: 50px;
+	overflow: hidden;	
+}
+.photo{
+	width: 100%;
+}
+.opcion h2{
+	margin-top: 20px;
+}
+/* fin contenido */
+/*contenido footer*/
+
+.container-video{
+	margin-top: 20px;
+	width: auto;
+	height: 400px;
+	text-align: center;
+}
+.container-video iframe{
+	max-width: 100%;
+	height: 100%;
+	border:0px;
+}
+.container-footer{
+	margin-top: 30px;
+	text-align: center;
+}
+.container-footer h3{
+	color: #949494;
+	text-transform: uppercase;
+}
+.container-footer p{
+	margin: 30px 10px;
+	color: white;
+}
+/* fin contenido footer*/
+/*media queries*/
+@media only screen and (min-width : 768px) and (max-width: 1223px) {
+	.container-section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.option{
+		width: 40%;
+	}
+	#option3{
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+}
+@media only screen and (min-width : 1224px) {
+	#body-home{
+		background-color: transparent;
+		padding: 0px;
+	}
+	video{
+		display: block;
+		position: fixed;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -1;
+	}
+	.box-white{
+		display: block;
+		background-color: transparent;
+		height: 55vh;
+	}
+	.container-section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	.option{
+		width: 33%;
+	}
+	.control-menu{
+		display: none;
+	}
+	.container-navegador{
+		display: flex;
+		justify-content: space-around;
+		background-color: #9A2222;
+		padding: 5px;
+		border-radius: 0px 0px 50px 50px;
+	}
+	.list-menu{
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	.list-menu li{
+		margin-right: 20px;
+		background-color: transparent;
+	}
+	.list-menu li a{
+		padding: 10px;
+	}
+	.container-footer p, .container-footer h3{
+		color: black;
+
+	}
+}
+/*fin styles home*/
