@@ -35,19 +35,21 @@ body.login{
 	background-color:black;
 	opacity: 0.6;
 }
-.text{
-	color: #ffffff;
+h1.login{
+		font-family: 'Bad Script', cursive;
+		color: #fff;
+	}
+a{
+	 text-decoration: none;
+	 color: #fff;
+	 opacity: 0.7;
 }
-a, h2, span{
-	color: #ffffff;
-}
-a, span{
-	 text-decoration: underline;
-}
+
+
+
 /*END STYLES LOGIN*/
-/* Start style home*/
+/* Start style body home*/
 #body-home{
-	background-color: #572364;
 	padding: 20px;	
 }
 #body-home a{
@@ -62,8 +64,8 @@ video{
 .box-white{
 	display: none;
 }
-/* fin reseteos generales*/
-/*navegador*/
+/*end style body home*/
+/*start navegador*/
 #logo img{
 	height: 40px;
 }
@@ -95,7 +97,6 @@ video{
     background-repeat: no-repeat;
     background-position: center center;
     display: block;
-
 }
 .list-menu {
 	clear: both;
@@ -104,7 +105,6 @@ video{
 }
 #menu:target .list-menu {
     height: auto;
-    background-color: transparent;
 }
 .close{
 	display: none;
@@ -117,20 +117,21 @@ video{
 }
 .list-menu li {
     display: block;
-    background-color: #9A2222;
+    background-color: rgba(0,0,0,0.5);
     text-align: center;
     border-radius: 5px;
-    border:1px solid white;
     margin-top: 3px;
+    padding: 3px;
 }
 .list-menu a {
 	text-transform: uppercase;
     color: white;
     display: block;
     margin: 0 auto;
+    font-weight: 700;
 }
-/*fin navegador*/
-/* Header*/	
+/*End navegador*/
+/*Start Header*/	
 
 .container-header{
 	margin-top: 20px;
@@ -159,8 +160,8 @@ video{
 	margin-top: 20px;
 	letter-spacing: 3px;
 }
-/* fin Header*/
-/*Contenido section*/
+/* End Header*/
+/*Start Contenido section*/
 
 .option{
 	text-align: center;
@@ -179,8 +180,8 @@ video{
 .opcion h2{
 	margin-top: 20px;
 }
-/* fin contenido */
-/*contenido footer*/
+/* end contenido */
+/* Start contenido footer*/
 
 .container-video{
 	margin-top: 20px;
@@ -198,15 +199,14 @@ video{
 	text-align: center;
 }
 .container-footer h3{
-	color: #949494;
 	text-transform: uppercase;
 }
 .container-footer p{
 	margin: 30px 10px;
 	color: white;
 }
-/* fin contenido footer*/
-/*media queries*/
+/* End contenido footer*/
+/* Start media queries*/
 @media only screen and (min-width : 768px) and (max-width: 1223px) {
 	.container-section{
 		display: flex;
@@ -223,7 +223,6 @@ video{
 }
 @media only screen and (min-width : 1224px) {
 	#body-home{
-		background-color: transparent;
 		padding: 0px;
 	}
 	video{
@@ -253,9 +252,9 @@ video{
 	.container-navegador{
 		display: flex;
 		justify-content: space-around;
-		background-color: #9A2222;
+		background-color: rgba(0,0,0,0.5);
 		padding: 5px;
-		border-radius: 0px 0px 50px 50px;
+		box-shadow: 0 0 50px;
 	}
 	.list-menu{
 		height: auto;
@@ -268,10 +267,12 @@ video{
 	}
 	.list-menu li a{
 		padding: 10px;
+		font-weight: 700;
 	}
 	.container-footer p, .container-footer h3{
 		color: black;
 
 	}
 }
-/*fin styles home*/
+/*End media queries*/
+/*End styles home*/
