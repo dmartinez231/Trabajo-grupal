@@ -1,0 +1,464 @@
+/*reseteos generales*/
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+ul, ol{
+	padding:0px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+p, i, .list-inline-item, .btn-primary, .form-check-label, .create, .forgot{
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+}
+.btn-primary {
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #B31C17;
+	color: white;
+	border-color: #B31C17;
+	align-items: center;
+	padding-bottom: 10px;
+}
+
+button:hover,.btn-primary:hover {
+	background-color: #3D3D45;
+	border: none;
+
+}
+/* Formulario de Registro*/
+.registros .input-group-prepend{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/*STYLES LOGIN*/
+.container{
+	padding-top: 50px;
+
+}
+body.login{
+	background-image: url(../img/fondoregistro2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+h1.login {
+		font-family: 'Bad Script', cursive;
+		color: #fff;
+		text-align: center;
+	}
+a{
+	 text-decoration: none;
+	 color: #fff;
+	 font-weight: 900;
+}
+a:hover, label{
+  color: #fff;
+}
+.center {
+	display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.p-3{
+	background-color:#000000;
+	opacity: 0.6;
+}
+footer {
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	margin-top: 30px;
+}
+.form {
+  width: 450px;
+}
+/*END STYLES LOGIN*/
+
+/* Start style home*/
+#body-home{
+	padding: 20px;
+}
+/* Start style body home*/
+#body-home a{
+	text-decoration: none;
+}
+h1,h2{
+	font-family: 'Bad Script', cursive;
+}
+h2{
+	font-size: 20px;
+	color: white;
+}
+.background-video{
+	display: none;
+}
+/*end style body home*/
+/*start navegador*/
+
+#logo{
+	float: right;
+	margin-top: 10px;
+}
+.container-navegador{
+	overflow: hidden;
+}
+.control-menu {
+    border: 1px solid #fff;
+    display: block;
+    float: left;
+}
+.control-menu a span {
+    display: inline-block;
+    text-indent: -9999px;
+    height: 40px;
+    width: 40px;
+}
+.control-menu .close {
+    background-image: url("../img/close-menu.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: none;
+}
+.control-menu .open {
+    background-image: url("../img/open-menu.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+}
+.list-menu {
+	clear: both;
+  height: 0;
+  overflow: hidden;
+	transition: height 0.5s ease-out;
+}
+#menu:target .list-menu {
+  height: 180px;
+	transition: height 1s ease-out;
+}
+.close{
+	display: none;
+}
+#menu:target .open{
+	display: none;
+}
+#menu:target .close{
+	display: block;
+}
+.list-menu li {
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 3px;
+}
+.list-menu a {
+	text-transform: uppercase;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+/*fin navegador*/
+/*End navegador*/
+/*Start Header*/
+
+.container-header{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(113,9,2,0.8);
+	border-radius: 50px;
+	padding: 10px;
+}
+.container-header h1{
+	color: black;
+	margin-top: 30px;
+	font-family: 'Bad Script', cursive;
+}
+.container-header p{
+	color: white;
+	margin-top: 20px;
+	letter-spacing: 3px;
+}
+/* End Header*/
+/*Start Contenido section*/
+
+.option{
+	text-align: center;
+	margin-top: 30px;
+	background-color: rgba(113,9,2,0.8);
+	border-radius: 50px;
+	padding: 20px;
+}
+.option p{
+	color: white;
+}
+.container-img{
+	border-radius: 50px;
+	overflow: hidden;
+}
+.photo{
+	width: 100%;
+}
+.titulos-section{
+	margin-top: 20px;
+	font-size: 30px;
+}
+/* end contenido */
+/* Start contenido footer*/
+
+.container-video{
+	margin-top: 20px;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+.container-video iframe{
+	max-width: 100%;
+	border:0px;
+}
+.container-footer{
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#como-trabajamos{
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+.container-footer p{
+	margin: 30px 10px;
+	color: white;
+}
+/* End contenido footer*/
+/* Start media queries*/
+@media only screen and (min-width : 768px) and (max-width: 1223px) {
+
+	.container-section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.option{
+		width: 40%;
+	}
+	#option3{
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.contenedor-registros{
+		overflow: hidden;
+	}
+}
+
+
+@media only screen and (min-width : 1224px) and (max-width: 1823px) {
+	#logo{
+		margin-top: 0px;
+	}
+	html{
+		position: relative;
+		min-height: 81.1%;
+	}
+	#body-home{
+		padding: 0px;
+	}
+	.container-navegador h2{
+		margin: 50% auto;
+	}
+	.background-video{
+		display: block;
+		position: fixed;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -1;
+	}
+	.container-header{
+		margin-top: 20px;
+		width: 100%;
+		text-align: center;
+		background-color: transparent;
+		border-radius: 0px;
+		position: relative;
+		height: 90vh;
+	}
+	.container-section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	.option{
+		width: 33%;
+	}
+	.control-menu{
+		display: none;
+	}
+	.container-navegador{
+		display: flex;
+		justify-content: space-around;
+		background-color: rgba(0,0,0,0.5);
+		padding: 5px;
+	}
+	.list-menu{
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	.list-menu li{
+		margin-right: 20px;
+		background-color: transparent;
+	}
+	.list-menu li a{
+		padding: 10px;
+		font-weight: 700;
+	}
+	.container-footer p, .container-footer h3{
+		color: black;
+
+	}
+	.contenedor-registros{
+		overflow: hidden;
+	}
+	#texto-wine{
+		color: black;
+		position: absolute;
+		top: 80%;
+		left: 0%;
+	}
+	.container-header .marca{
+		position: absolute;
+		transform: translate(-70%,-50%);
+		top: 70%;
+		left: 50%;
+	}
+	#como-trabajamos{
+		color: black;
+	}
+	footer{
+		position: absolute;
+		bottom: 0;
+		top: 100%;
+		min-width: 100%;
+	}
+	footer .container{
+		background-color: rgba(0, 0, 0, 0.5);
+		min-width: 100%;
+	}
+}
+	@media only screen and (min-width : 1824px) {
+		#logo{
+			margin-top: 0px;
+		}
+		html{
+			position: relative;
+			min-height: 83.5%;
+		}
+		#body-home{
+			padding: 0px;
+		}
+		.container-navegador h2{
+			margin: 50% auto;
+		}
+		.background-video{
+			display: block;
+			position: fixed;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: -1;
+		}
+		.container-header{
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+			background-color: transparent;
+			border-radius: 0px;
+			position: relative;
+			height: 100vh;
+		}
+		.container-section{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 20px;
+		}
+		.option{
+			width: 33%;
+		}
+		.control-menu{
+			display: none;
+		}
+		.container-navegador{
+			display: flex;
+			justify-content: space-around;
+			background-color: rgba(0,0,0,0.5);
+			padding: 5px;
+		}
+		.list-menu{
+			height: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+		.list-menu li{
+			margin-right: 20px;
+			background-color: transparent;
+		}
+		.list-menu li a{
+			padding: 10px;
+			font-weight: 700;
+		}
+		.container-footer p, .container-footer h3{
+			color: black;
+
+		}
+		.contenedor-registros{
+			overflow: hidden;
+		}
+		#texto-wine{
+			color: black;
+			position: absolute;
+			top: 80%;
+			left: 0%;
+			width: 100%;
+		}
+		.container-header .marca{
+			position: absolute;
+			transform: translate(-70%,-50%);
+			top: 70%;
+			left: 50%;
+		}
+		#como-trabajamos{
+			color: black;
+		}
+		footer{
+			position: absolute;
+			bottom: 0;
+			top: 100%;
+			min-width: 100%;
+		}
+		footer .container{
+			background-color: rgba(0, 0, 0, 0.5);
+			min-width: 100%;
+		}
+}
+
+
+/*fin styles home*/
+/*End media queries*/
+/*End styles home*/
